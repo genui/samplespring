@@ -1,13 +1,24 @@
 package com.example.samplespringboot.repository;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import org.springframework.stereotype.Repository;
 
-@Entity
-@Table(name = "USER")
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
+@Repository
 public class h2Repository {
-    @Column(name = "username")
-    private String username;
+    public static void h2access(String[] arg) throws Exception{
+        // H2にデータを追加
+        Class.forName("org.h2.Driver");
+        String dburl = "jdbc:h2:~/test";
+
+        String sql = "INSERT INTO USER(username,password) VALUES('repository','repositoryy')";
+        Connection conn = DriverManager.getConnection(dburl,"sa","");
+        conn.createStatement().executeUpdate(sql);
+        conn.close();
+
+    }
 }
