@@ -1,12 +1,12 @@
-com/example/samplespringboot/DbMapper.java
- com.example.samplespringboot.DbMapper
+com/example/samplespringboot/web/PostTextController.java
+ com.example.samplespringboot.web.PostTextController
+com/example/samplespringboot/SamplespringbootApplication.java
+ com.example.samplespringboot.SamplespringbootApplication
 com/example/samplespringboot/service/h2Service.java
  com.example.samplespringboot.service.h2Service
 com/example/samplespringboot/repository/h2Repository.java
  com.example.samplespringboot.repository.h2Repository
-com/example/samplespringboot/web/PostTextController.java
- com.example.samplespringboot.web.PostTextController
 com/example/samplespringboot/domain/h2Domain.java
  com.example.samplespringboot.domain.h2Domain
-com/example/samplespringboot/SamplespringbootApplication.java
- com.example.samplespringboot.SamplespringbootApplication
+com/example/samplespringboot/DbMapper.java
+ com.example.samplespringboot.DbMapper
