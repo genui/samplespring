@@ -1,12 +1,16 @@
-com/example/samplespringboot/web/PostTextController.java
- com.example.samplespringboot.web.PostTextController
-com/example/samplespringboot/SamplespringbootApplication.java
- com.example.samplespringboot.SamplespringbootApplication
-com/example/samplespringboot/service/h2Service.java
- com.example.samplespringboot.service.h2Service
-com/example/samplespringboot/repository/h2Repository.java
- com.example.samplespringboot.repository.h2Repository
-com/example/samplespringboot/domain/h2Domain.java
- com.example.samplespringboot.domain.h2Domain
+com/example/samplespringboot/PostMapping.java
+ com.example.samplespringboot.PostMapping
+com/example/samplespringboot/repository/loginRepository.java
+ com.example.samplespringboot.repository.loginRepository
 com/example/samplespringboot/DbMapper.java
  com.example.samplespringboot.DbMapper
+com/example/samplespringboot/login.java
+ com.example.samplespringboot.login
+com/example/samplespringboot/SamplespringbootApplication.java
+ com.example.samplespringboot.SamplespringbootApplication
+com/example/samplespringboot/repository/allUsersRepository.java
+ com.example.samplespringboot.repository.allUsersRepository
+com/example/samplespringboot/service/loginService.java
+ com.example.samplespringboot.service.loginService
+com/example/samplespringboot/controller/loginController.java
+ com.example.samplespringboot.controller.loginController
