@@ -15,13 +15,7 @@ public class loginService{
         ResultSet allUser = allUsersRepository.allUser(request);
         String value = request.getParameter("userInfo");
         String[] userInfomation = value.split("/");
-
-        while (allUser.next()){
-            if(userInfomation[0].equals(allUser.getString("name")) && userInfomation[1].equals(allUser.getString("password"))
-            ){
-                return true;
-            }
-        }
-        return false;
+        boolean userFind = findUser.alluserfind(allUser, userInfomation);
+        return userFind;
     }
 }

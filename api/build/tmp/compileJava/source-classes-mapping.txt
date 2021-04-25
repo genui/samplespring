@@ -1,16 +1,22 @@
 com/example/samplespringboot/PostMapping.java
  com.example.samplespringboot.PostMapping
-com/example/samplespringboot/repository/loginRepository.java
- com.example.samplespringboot.repository.loginRepository
+com/example/samplespringboot/repository/allUsersRepository.java
+ com.example.samplespringboot.repository.allUsersRepository
 com/example/samplespringboot/DbMapper.java
  com.example.samplespringboot.DbMapper
 com/example/samplespringboot/login.java
  com.example.samplespringboot.login
 com/example/samplespringboot/SamplespringbootApplication.java
  com.example.samplespringboot.SamplespringbootApplication
-com/example/samplespringboot/repository/allUsersRepository.java
- com.example.samplespringboot.repository.allUsersRepository
 com/example/samplespringboot/service/loginService.java
  com.example.samplespringboot.service.loginService
+com/example/samplespringboot/service/findUser.java
+ com.example.samplespringboot.service.findUser
 com/example/samplespringboot/controller/loginController.java
  com.example.samplespringboot.controller.loginController
+com/example/samplespringboot/controller/signupController.java
+ com.example.samplespringboot.controller.signupController
+com/example/samplespringboot/service/signupService.java
+ com.example.samplespringboot.service.signupService
+com/example/samplespringboot/repository/SignupRepository.java
+ com.example.samplespringboot.repository.SignupRepository
