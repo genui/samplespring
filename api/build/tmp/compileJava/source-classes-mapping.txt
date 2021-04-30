@@ -1,22 +1,26 @@
-com/example/samplespringboot/PostMapping.java
- com.example.samplespringboot.PostMapping
-com/example/samplespringboot/repository/allUsersRepository.java
- com.example.samplespringboot.repository.allUsersRepository
 com/example/samplespringboot/DbMapper.java
  com.example.samplespringboot.DbMapper
-com/example/samplespringboot/login.java
- com.example.samplespringboot.login
+com/example/samplespringboot/login/signupService.java
+ com.example.samplespringboot.login.signupService
+com/example/samplespringboot/login/allUsersRepository.java
+ com.example.samplespringboot.login.allUsersRepository
+com/example/samplespringboot/login/findUser.java
+ com.example.samplespringboot.login.findUser
+com/example/samplespringboot/login/loginController.java
+ com.example.samplespringboot.login.loginController
 com/example/samplespringboot/SamplespringbootApplication.java
  com.example.samplespringboot.SamplespringbootApplication
-com/example/samplespringboot/service/loginService.java
- com.example.samplespringboot.service.loginService
-com/example/samplespringboot/service/findUser.java
- com.example.samplespringboot.service.findUser
-com/example/samplespringboot/controller/loginController.java
- com.example.samplespringboot.controller.loginController
-com/example/samplespringboot/controller/signupController.java
- com.example.samplespringboot.controller.signupController
-com/example/samplespringboot/service/signupService.java
- com.example.samplespringboot.service.signupService
-com/example/samplespringboot/repository/SignupRepository.java
- com.example.samplespringboot.repository.SignupRepository
+com/example/samplespringboot/PostMapping.java
+ com.example.samplespringboot.PostMapping
+com/example/samplespringboot/login/signupController.java
+ com.example.samplespringboot.login.signupController
+com/example/samplespringboot/login/loginService.java
+ com.example.samplespringboot.login.loginService
+com/example/samplespringboot/login/SignupRepository.java
+ com.example.samplespringboot.login.SignupRepository
+com/example/samplespringboot/textGet/textGetController.java
+ com.example.samplespringboot.textGet.textGetController
+com/example/samplespringboot/textGet/textGetService.java
+ com.example.samplespringboot.textGet.textGetService
+com/example/samplespringboot/textGet/textGetRepository.java
+ com.example.samplespringboot.textGet.textGetRepository
