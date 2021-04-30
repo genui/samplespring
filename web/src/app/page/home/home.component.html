@@ -1,0 +1,32 @@
+
+<div class="homePageBackground">
+  <h2>Home Page</h2>
+  <form onsubmit="return false;">
+    <mat-form-field>
+      <mat-label>Input Key Word!</mat-label>
+      <input matInput
+             name="keyword"
+             #keyword
+             (keydown.enter)="inputTextFocus()">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Input Text!</mat-label>
+      <input matInput
+             id="text"
+             #text
+             (keydown.enter)="inputText(keyword.value, text.value)">
+    </mat-form-field>
+  </form>
+
+  <h1>{{getTextReference}}</h1>
+  <form onsubmit="return false;">
+    <mat-form-field>
+      <mat-label>Key Word for Reference!</mat-label>
+      <input matInput
+             #inputKeyWord
+             (keydown.enter)="getText(inputKeyWord.value)">
+    </mat-form-field>
+  </form>
+  <h1>{{getTextReference}}</h1>
+</div>
+
