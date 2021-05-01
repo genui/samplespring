@@ -18,8 +18,8 @@ public class loginController extends HttpServlet {
     @CrossOrigin
     @RequestMapping(method={RequestMethod.POST,RequestMethod.GET})
 
-    public boolean loginFunction(HttpServletRequest request) throws Exception {
-        boolean checkUser = loginService.loginFunction(request);
+    public String loginFunction(HttpServletRequest request) throws Exception {
+        String checkUser = loginService.loginFunction(request);
         return checkUser;
     }
 }

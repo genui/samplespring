@@ -19,9 +19,9 @@ public class signupController extends HttpServlet {
     @CrossOrigin
     @RequestMapping(method={RequestMethod.POST,RequestMethod.GET})
 
-    public boolean signup(HttpServletRequest request) throws Exception {
+    public String signup(HttpServletRequest request) throws Exception {
 
-        boolean createUser = signupService.createUser(request);
+        String createUser = signupService.createUser(request);
         return createUser;
     }
 }

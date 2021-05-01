@@ -12,7 +12,7 @@ import java.sql.ResultSet;
 import com.example.samplespringboot.textGet.textGetService;
 
 @RestController
-@RequestMapping("api/text")
+@RequestMapping("api/gettext")
 @AllArgsConstructor
 
 public class textGetController {

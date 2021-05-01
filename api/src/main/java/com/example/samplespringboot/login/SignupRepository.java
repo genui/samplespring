@@ -12,7 +12,7 @@ import java.util.UUID;
 
 @Repository
 public class SignupRepository {
-    public boolean loginRepo(HttpServletRequest request) throws Exception {
+    public String loginRepo(HttpServletRequest request) throws Exception {
         String value = request.getParameter("userInfo");
         String[] userInfomation = value.split("/");
         String url = "jdbc:h2:~/test";
@@ -23,12 +23,12 @@ public class SignupRepository {
         Statement stmt = conn.createStatement();
         // ユーザのIDをランダムで生成
         String sqlNameSentence
-                = "INSERT INTO USERS (ID, NAME, PASSWORD) values ('"
-                + randomKey + "','"
+                = "INSERT INTO USERS values ('"
                 + userInfomation[0] + "','"
-                + userInfomation[1] + "')";
+                + userInfomation[1] + "','"
+                + userInfomation[2] + "');";
 
-        System.out.println(sqlNameSentence);
-        return stmt.execute(sqlNameSentence);
+        stmt.execute(sqlNameSentence);
+        return randomKey;
     }
 }

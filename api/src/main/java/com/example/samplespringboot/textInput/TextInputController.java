@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 
 @RestController
-@RequestMapping("api/text")
+@RequestMapping("api/inputtext")
 @AllArgsConstructor
 
 public class TextInputController {
-    TextInputService textInputService;
+    TextInputService textInputService = new TextInputService();
     @CrossOrigin
     @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST})
 

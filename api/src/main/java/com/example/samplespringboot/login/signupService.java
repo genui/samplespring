@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 @AllArgsConstructor
 
 public class signupService {
-    public boolean createUser(HttpServletRequest request) throws Exception{
+    public String createUser(HttpServletRequest request) throws Exception{
         SignupRepository signupRepository = new SignupRepository();
-        boolean createUser = signupRepository.loginRepo(request);
+        String createUser = signupRepository.loginRepo(request);
         return createUser;
     }
 

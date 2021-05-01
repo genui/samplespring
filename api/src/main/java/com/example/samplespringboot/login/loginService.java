@@ -10,11 +10,11 @@ import java.sql.ResultSet;
 @Service
 @AllArgsConstructor
 public class loginService{
-    public boolean loginFunction(HttpServletRequest request) throws Exception{
+    public String loginFunction(HttpServletRequest request) throws Exception{
         ResultSet allUser = allUsersRepository.allUser(request);
         String value = request.getParameter("userInfo");
         String[] userInfomation = value.split("/");
-        boolean userFind = findUser.alluserfind(allUser, userInfomation);
+        String userFind = findUser.alluserfind(allUser, userInfomation);
         return userFind;
     }
 }

@@ -15,13 +15,14 @@ public class TextInputRepository {
         Connection conn = DriverManager.getConnection(url, user, password);
         Statement stmt = conn.createStatement();
 
-        System.out.println(text);
 
-//        String sqlTextGet
-//                = "SELECT * FROM TEXT WHERE KEYWORD = '"
-//                + text[0]
-//                + "';";
-//
-//        ResultSet getText = stmt.executeQuery(sqlTextGet);
+        String sqlTextInput
+                = "INSERT INTO TEXT VALUES ('"
+                + text[0] + "','"
+                + text[1] + "','"
+                + text[2] + "'"
+                + ");";
+
+        stmt.execute(sqlTextInput);
     }
 }
