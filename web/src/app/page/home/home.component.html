@@ -1,6 +1,6 @@
 
 <header class="header">
-  <mat-toolbar color="owlYellow">
+  <mat-toolbar color="toolbar">
     <span>DEMO TEST</span>
     <span class="spacer"></span>
     <button mat-icon-button [routerLink]="'/app-login'">
@@ -32,14 +32,14 @@
 
   <form onsubmit="return false;" class="inputForm">
     <h2 class="title">Please input keyword.</h2>
-    <mat-form-field>
+    <mat-form-field class="inputField">
       <mat-label>Input keyword !</mat-label>
       <input matInput
              #inputKeyWord
              (keydown.enter)="getText(inputKeyWord.value)">
     </mat-form-field>
   </form>
-  <h1>{{getTextReference}}</h1>
   <mat-progress-bar mode="buffer"></mat-progress-bar>
+  <h1>{{getTextReference}}</h1>
 </div>
 
