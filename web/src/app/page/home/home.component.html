@@ -1,32 +1,45 @@
 
+<header class="header">
+  <mat-toolbar color="owlYellow">
+    <span>DEMO TEST</span>
+    <span class="spacer"></span>
+    <button mat-icon-button [routerLink]="'/app-login'">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar>
+</header>
+
 <div class="homePageBackground">
-  <h2>Home Page</h2>
-  <form onsubmit="return false;">
-    <mat-form-field>
-      <mat-label>Input Key Word!</mat-label>
+  <form onsubmit="return false;" class="inputForm">
+    <h2 class="title">Please input keyword and text.</h2>
+    <mat-form-field class="inputField">
       <input matInput
+             placeholder="Input keyword !"
              name="keyword"
              #keyword
              (keydown.enter)="inputTextFocus()">
     </mat-form-field>
-    <mat-form-field>
-      <mat-label>Input Text!</mat-label>
+    <mat-form-field class="inputField">
+      <mat-label>Input Text !</mat-label>
       <input matInput
              id="text"
              #text
              (keydown.enter)="inputText(keyword.value, text.value)">
     </mat-form-field>
+    <mat-progress-bar mode="buffer"></mat-progress-bar>
+
   </form>
 
-  <h1>{{getTextReference}}</h1>
-  <form onsubmit="return false;">
+  <form onsubmit="return false;" class="inputForm">
+    <h2 class="title">Please input keyword.</h2>
     <mat-form-field>
-      <mat-label>Key Word for Reference!</mat-label>
+      <mat-label>Input keyword !</mat-label>
       <input matInput
              #inputKeyWord
              (keydown.enter)="getText(inputKeyWord.value)">
     </mat-form-field>
   </form>
   <h1>{{getTextReference}}</h1>
+  <mat-progress-bar mode="buffer"></mat-progress-bar>
 </div>
 

@@ -1,4 +1,25 @@
+.header{
+  max-width: 90%;
+  margin-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .homePageBackground {
-  background-color: #FFDE03;
-  height: 100VW;
+  max-width: 87%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #CDC2B8;
+}
+.spacer { flex: 1 1 auto }
+.inputForm{
+  margin-top: 32px;
+}
+.inputField{
+  margin-right: 10px;
+}
+.title{
+  font-family: Impact;
+}
+.label{
+  color: blue;
 }

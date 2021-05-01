@@ -1,0 +1,30 @@
+<header class="header">
+  <mat-toolbar color="owlYellow">
+    <span>LOGIN</span>
+    <span class="spacer"></span>
+  </mat-toolbar>
+</header>
+
+<div class="homePageBackground">
+  <form>
+    <mat-form-field>
+      <mat-label>Input Your Name!</mat-label>
+      <input matInput
+             name="userName"
+             #userName>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Input Password!</mat-label>
+      <input matInput
+             id="password"
+             #password
+             (keydown.enter)="inputPassword(userName.value, password.value)">
+    </mat-form-field>
+    <h1>{{errorMessage}}</h1>
+  </form>
+  <div class="changeButton">
+    <button mat-icon-button [routerLink]="'/app-signup'">
+      <h3>→SIGNUP!</h3>
+    </button>
+  </div>
+</div>
